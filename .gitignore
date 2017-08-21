@@ -1,0 +1,68 @@
+.DS_Store
+*.iml
+*.ipr
+*.iws
+.idea/
+.stats/
+*.swp
+*~.nib
+*.gcno
+*.gcda
+xcbuild.log
+
+.xcodeproj/ !*.xcodeproj/project.pbxproj
+xcuserdata
+### /Users/jangorman/.gitignore-boilerplates/Objective-C.gitignore
+
+# Xcode
+**/build/*
+**/Build/*
+**/Build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+Pods/Pods.xcodeproj/xcshareddata/xcschemes/*
+
+# Maven
+i10n/
+
+# Ruby
+.bundle/
+.vendor/
+
+uia_traces
+export
+vendor/ruby
+.podhash
+atlassian-ide-plugin.xml
+totranslate.zip
+.stats
+
+Carthage/Checkouts/
+Carthage/Build/Mac
+Pods/build/**
+Modules/**/Build
+build_log
+test-reports
+coverage.xml
+.rake_tasks
+
+# Framework build script creates this, unfortunately
+mkmf.log
+
+# FBSnapshotTestCase
+FailureDiffs
+
+# Build artefacts
+cobertura.xml
