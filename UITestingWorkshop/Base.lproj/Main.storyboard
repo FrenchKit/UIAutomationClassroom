@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -107,13 +108,13 @@
         <!--Table View Controller-->
         <scene sceneID="QEq-QU-oYV">
             <objects>
-                <tableViewController id="dc0-uY-ai1" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" id="dc0-uY-ai1" customClass="TableViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="aSU-4I-b7a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="JGN-33-x9g">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableItemCell" rowHeight="150" id="JGN-33-x9g" customClass="TableItemCell" customModule="UITestingWorkshop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JGN-33-x9g" id="S5C-Rj-78O">
@@ -136,6 +137,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2g-Md-Lib">
                                             <rect key="frame" x="150" y="37" width="81" height="30"/>
                                             <state key="normal" title="MORE INFO"/>
+                                            <connections>
+                                                <action selector="moreInfo:" destination="JGN-33-x9g" eventType="touchUpInside" id="QNR-CQ-vuf"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -148,6 +152,11 @@
                                         <constraint firstItem="R2g-Md-Lib" firstAttribute="top" secondItem="Zcj-OX-lBR" secondAttribute="bottom" constant="8" id="o0W-47-FaJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemButton" destination="R2g-Md-Lib" id="g9w-JC-d6p"/>
+                                    <outlet property="itemImageView" destination="DP9-sr-mNF" id="sKY-hh-oba"/>
+                                    <outlet property="itemTitle" destination="Zcj-OX-lBR" id="htM-wY-4VQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -160,11 +169,80 @@
             </objects>
             <point key="canvasLocation" x="2842.4000000000001" y="122.78860569715144"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="UkY-DH-JId">
+            <objects>
+                <viewController storyboardIdentifier="ItemViewController" title="Item" id="ZK7-7o-Z3n" customClass="ItemViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rkl-Jh-XJl"/>
+                        <viewControllerLayoutGuide type="bottom" id="JHR-Fr-qgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l1r-0F-kn2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0jA-uq-vwS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vkR-1d-Cew">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vkR-1d-Cew" secondAttribute="height" multiplier="375:248" id="F8A-WJ-iQk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cY2-t0-kS9">
+                                        <rect key="frame" x="0.0" y="268" width="375" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1H-8M-ctW">
+                                                <rect key="frame" x="4" y="0.0" width="363" height="50"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4AO-fs-u81"/>
+                                            <constraint firstItem="I1H-8M-ctW" firstAttribute="leading" secondItem="cY2-t0-kS9" secondAttribute="leading" constant="4" id="AGF-qU-Dxm"/>
+                                            <constraint firstItem="I1H-8M-ctW" firstAttribute="top" secondItem="cY2-t0-kS9" secondAttribute="top" id="G0I-kL-lc8"/>
+                                            <constraint firstAttribute="bottom" secondItem="I1H-8M-ctW" secondAttribute="bottom" id="n7n-wx-5H8"/>
+                                            <constraint firstAttribute="trailing" secondItem="I1H-8M-ctW" secondAttribute="trailing" constant="8" id="zh6-D9-Vsw"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NPa-vj-aPY">
+                                        <rect key="frame" x="0.0" y="338" width="375" height="265"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0jA-uq-vwS" secondAttribute="trailing" id="4vc-j0-ABF"/>
+                            <constraint firstItem="0jA-uq-vwS" firstAttribute="top" secondItem="Rkl-Jh-XJl" secondAttribute="bottom" id="76B-Lg-HCj"/>
+                            <constraint firstItem="JHR-Fr-qgL" firstAttribute="top" secondItem="0jA-uq-vwS" secondAttribute="bottom" id="VZI-tr-gDU"/>
+                            <constraint firstItem="0jA-uq-vwS" firstAttribute="leading" secondItem="l1r-0F-kn2" secondAttribute="leading" id="w4Z-Dz-WsG"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="descriptionText" destination="NPa-vj-aPY" id="ola-ro-k8f"/>
+                        <outlet property="imageView" destination="vkR-1d-Cew" id="X4I-W3-rv5"/>
+                        <outlet property="titleLabel" destination="I1H-8M-ctW" id="Aof-l9-gb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jH1-wr-rWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2842.4000000000001" y="837.03148425787117"/>
+        </scene>
         <!--Collection View Controller-->
         <scene sceneID="snK-fZ-ULJ">
             <objects>
                 <collectionViewController id="mYa-1S-MQu" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="E8k-XI-LPH">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="E8k-XI-LPH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,6 +328,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="i8a-qI-6Rv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gdj-fO-8hO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
