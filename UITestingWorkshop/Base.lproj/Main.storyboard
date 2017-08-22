@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="1996" y="851"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table-->
         <scene sceneID="QEq-QU-oYV">
             <objects>
-                <tableViewController storyboardIdentifier="TableViewController" id="dc0-uY-ai1" customClass="TableViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" title="Table" id="dc0-uY-ai1" customClass="TableViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="aSU-4I-b7a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,11 +238,11 @@
             </objects>
             <point key="canvasLocation" x="2842.4000000000001" y="837.03148425787117"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Collection-->
         <scene sceneID="snK-fZ-ULJ">
             <objects>
-                <collectionViewController id="mYa-1S-MQu" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="E8k-XI-LPH">
+                <collectionViewController title="Collection" id="mYa-1S-MQu" customClass="CollectionViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="E8k-XI-LPH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,7 +253,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="l6D-X8-imK">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionItemCell" id="l6D-X8-imK" customClass="CollectionItemCell" customModule="UITestingWorkshop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="126" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -291,6 +291,11 @@
                                     <constraint firstItem="MmU-sU-sKy" firstAttribute="trailing" secondItem="l6D-X8-imK" secondAttribute="trailingMargin" id="jQB-UX-yn5"/>
                                     <constraint firstItem="Kke-4C-zLA" firstAttribute="leading" secondItem="l6D-X8-imK" secondAttribute="leading" constant="8" id="y6u-QX-j3a"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="itemImageView" destination="Kke-4C-zLA" id="DB9-z4-0Cy"/>
+                                    <outlet property="itemNameLabel" destination="MmU-sU-sKy" id="mjv-2i-7G7"/>
+                                    <outlet property="itemPriceLabel" destination="CFJ-zh-f1q" id="xgh-S0-dsf"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

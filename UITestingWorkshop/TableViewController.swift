@@ -6,12 +6,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    static let imageNamePool = ["ic-1", "ic-2", "ic-3", "ic-4", "ic-5"]
-    static let itemCount = 50
-    var items: [TableItem] = (0..<50).map { index in
-        TableItem(title: "Item #\(index + 1)",
-            imageName: imageNamePool[Int(arc4random_uniform(UInt32(imageNamePool.count)))])
-    }
+    var items: [TableItem] = ItemGenerator.generate()
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
