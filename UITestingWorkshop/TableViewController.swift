@@ -8,6 +8,11 @@ class TableViewController: UITableViewController {
 
     var items: [TableItem] = ItemGenerator.generate()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.accessibilityIdentifier = "table"
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
