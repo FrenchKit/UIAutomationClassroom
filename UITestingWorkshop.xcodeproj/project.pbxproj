@@ -10,6 +10,7 @@
 		6D587BAF1F4F15880002C18A /* AssertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D587BAE1F4F15880002C18A /* AssertionTests.swift */; };
 		6D587BC71F4F1BCF0002C18A /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D587BC61F4F1BCF0002C18A /* XCTestCase+Wait.swift */; };
 		6D587BC91F4F1C8E0002C18A /* XCTest+Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D587BC81F4F1C8E0002C18A /* XCTest+Assert.swift */; };
+		6D587BCB1F4F210A0002C18A /* XCUIElementQuery+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D587BCA1F4F210A0002C18A /* XCUIElementQuery+Any.swift */; };
 		6D85CD691F4AE81800135010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CD681F4AE81800135010 /* AppDelegate.swift */; };
 		6D85CD6B1F4AE81800135010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CD6A1F4AE81800135010 /* ViewController.swift */; };
 		6D85CD6E1F4AE81800135010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85CD6C1F4AE81800135010 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		6D587BAE1F4F15880002C18A /* AssertionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertionTests.swift; sourceTree = "<group>"; };
 		6D587BC61F4F1BCF0002C18A /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
 		6D587BC81F4F1C8E0002C18A /* XCTest+Assert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Assert.swift"; sourceTree = "<group>"; };
+		6D587BCA1F4F210A0002C18A /* XCUIElementQuery+Any.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+Any.swift"; sourceTree = "<group>"; };
 		6D85CD651F4AE81800135010 /* UITestingWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestingWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D85CD681F4AE81800135010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D85CD6A1F4AE81800135010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				6D587BAE1F4F15880002C18A /* AssertionTests.swift */,
 				6D587BC61F4F1BCF0002C18A /* XCTestCase+Wait.swift */,
 				6D587BC81F4F1C8E0002C18A /* XCTest+Assert.swift */,
+				6D587BCA1F4F210A0002C18A /* XCUIElementQuery+Any.swift */,
 				6D85CD7F1F4AE81800135010 /* Info.plist */,
 				6D85CDA41F4AEDCE00135010 /* InfoPlist.strings */,
 				6D85CD971F4AE99100135010 /* MainScreen.swift */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D587BC91F4F1C8E0002C18A /* XCTest+Assert.swift in Sources */,
+				6D587BCB1F4F210A0002C18A /* XCUIElementQuery+Any.swift in Sources */,
 				6D85CD981F4AE99100135010 /* MainScreen.swift in Sources */,
 				6D85CD941F4AE90D00135010 /* Application.swift in Sources */,
 				6D85CD961F4AE95D00135010 /* ApplicationObjectTestCase.swift in Sources */,
