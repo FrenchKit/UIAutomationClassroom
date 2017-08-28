@@ -20,6 +20,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableItemCell", for: indexPath) as! TableItemCell
         cell.configure(items[indexPath.row])
+        cell.accessibilityIdentifier = "cell\(indexPath.row)"
         cell.delegate = self
         return cell
     }
@@ -33,7 +34,7 @@ class TableViewController: UITableViewController {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
         let item = items[indexPath.row]
         let alert = UIAlertController(title: "Info", message: item.title, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         present(alert, animated: true)
     }
 
