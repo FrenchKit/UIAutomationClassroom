@@ -8,12 +8,20 @@ protocol TableItemCellDelegate: class {
     func tableItemCellMoreInfo(_ cell: TableItemCell)
 }
 
-class TableItemCell: UITableViewCell {
+class TableItemCell: UITableViewCell, UIAccessibleContainer {
 
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var itemTitle: UILabel!
     @IBOutlet weak var itemButton: UIButton!
     weak var delegate: TableItemCellDelegate?
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        itemImageView.accessibilityIdentifier = "image"
+        itemTitle.accessibilityIdentifier = "title"
+        itemButton.accessibilityIdentifier = "button"
+        accessibilityElements = [itemImageView, itemTitle, itemButton]
+    }
 
     func configure(_ item: TableItem) {
         itemImageView.image = UIImage(named: item.imageName)
@@ -23,6 +31,18 @@ class TableItemCell: UITableViewCell {
     @IBAction
     func moreInfo(_ sender: Any) {
         delegate?.tableItemCellMoreInfo(self)
+    }
+
+    override func accessibilityElementCount() -> Int {
+        return accessibilityCount()
+    }
+
+    override func index(ofAccessibilityElement element: Any) -> Int {
+        return indexOfAccessibilityElement(element)
+    }
+
+    override func accessibilityElement(at index: Int) -> Any? {
+        return accessibilityElementAtIndex(index)
     }
 
 }

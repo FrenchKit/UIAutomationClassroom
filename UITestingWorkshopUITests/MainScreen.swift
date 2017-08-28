@@ -10,5 +10,6 @@ struct MainScreen {
     let testingLabel = app.staticTexts["testingLabel"]
     let showTableButton = app.buttons["showTableButton"]
     let showCollectionButton = app.buttons["showCollectionButton"]
+    let title = app.navigationBars.element.title
     
 }

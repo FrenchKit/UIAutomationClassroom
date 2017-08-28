@@ -16,6 +16,10 @@ class ItemViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = UIImage(named: item.imageName)
         titleLabel.text = item.title
+
+        imageView.accessibilityIdentifier = "image"
+        titleLabel.accessibilityIdentifier = "title"
+        descriptionText.accessibilityIdentifier = "description"
     }
 
 }

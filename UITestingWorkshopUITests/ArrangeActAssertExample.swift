@@ -14,6 +14,11 @@ class ArrangeActAssertExample: XCTestCase {
         Application.launch()
     }
 
+    override func tearDown() {
+        super.tearDown()
+        // here you can reset your changes, for example, logout the current user.
+    }
+
     func test_allInOne() {
         mainScreen.showTableButton.tap()
 
