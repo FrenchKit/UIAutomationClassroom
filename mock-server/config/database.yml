@@ -1,0 +1,6 @@
+development:
+  adapter: sqlite3
+  pool: 30
+  database: mockdb.sqlite3.db
+  timeout: 1000
+

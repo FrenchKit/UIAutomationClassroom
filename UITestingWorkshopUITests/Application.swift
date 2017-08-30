@@ -17,6 +17,10 @@ struct Application {
         case languagesValue([String])
         case locale
         case localeValue(String)
+        case serverAddress
+        case serverAddressValue(String)
+        case testID
+        case testIDValue(String)
 
         var description: String {
             switch self {
@@ -25,6 +29,10 @@ struct Application {
             case .languagesValue(let values): return "(" + values.joined(separator: ",") + ")"
             case .locale: return "-AppleLocale"
             case .localeValue(let value): return value
+            case .serverAddress: return "-serverAddress"
+            case .serverAddressValue(let value): return value
+            case .testID: return "-testID"
+            case .testIDValue(let value): return value
             }
         }
     }

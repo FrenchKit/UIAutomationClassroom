@@ -1,0 +1,10 @@
+# Overview
+
+To start mock server:
+  
+   $> ./manage.sh start
+ 
+ Stopping:
+   
+   $> ./manage.sh stop
+

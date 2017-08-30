@@ -38,6 +38,13 @@
 		6DBCBCFE1F56ADC000C910DC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DBCBD001F56ADC000C910DC /* Localizable.strings */; };
 		6DBCBD031F56AE2F00C910DC /* LocalizationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCBD021F56AE2F00C910DC /* LocalizationExample.swift */; };
 		6DBCBD181F56B12F00C910DC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DBCBD001F56ADC000C910DC /* Localizable.strings */; };
+		6DBCBD1C1F56B98300C910DC /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCBD191F56B98300C910DC /* MockServer.swift */; };
+		6DBCBD1D1F56B98300C910DC /* HARArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCBD1A1F56B98300C910DC /* HARArchive.swift */; };
+		6DBCBD1E1F56B98300C910DC /* MockServer+HAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCBD1B1F56B98300C910DC /* MockServer+HAR.swift */; };
+		6DBCBD211F56BABB00C910DC /* ExampleMockServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCBD201F56BABB00C910DC /* ExampleMockServerTests.swift */; };
+		6DBCBD441F56BD8B00C910DC /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCBD371F56BD5900C910DC /* ObjectMapper.framework */; };
+		6DBCBD461F56BDD200C910DC /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCBD371F56BD5900C910DC /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DBCBD481F56C00800C910DC /* LaunchArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCBD471F56C00800C910DC /* LaunchArgument.swift */; };
 		6DE36CC71F504B27006E73AC /* ArrangeActAssertExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE36CC61F504B27006E73AC /* ArrangeActAssertExample.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +56,80 @@
 			remoteGlobalIDString = 6D85CD641F4AE81800135010;
 			remoteInfo = UITestingWorkshop;
 		};
+		6DBCBD361F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F7619F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
+		};
+		6DBCBD381F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1602FF1AC023D5000CD69A;
+			remoteInfo = "ObjectMapper-Mac";
+		};
+		6DBCBD3A1F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A2AD03D1B2C78540097E150;
+			remoteInfo = "ObjectMapper-watchOS";
+		};
+		6DBCBD3C1F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7A61BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOS";
+		};
+		6DBCBD3E1F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F8119F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOSTests";
+		};
+		6DBCBD401F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1603091AC023D6000CD69A;
+			remoteInfo = "ObjectMapper-MacTests";
+		};
+		6DBCBD421F56BD5900C910DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7AF1BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOSTests";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DBCBD2A1F56BC2000C910DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBCBD451F56BD9300C910DC /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DBCBD461F56BDD200C910DC /* ObjectMapper.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6D587BAE1F4F15880002C18A /* AssertionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertionTests.swift; sourceTree = "<group>"; };
@@ -90,6 +170,13 @@
 		6DBCBCFF1F56ADC000C910DC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6DBCBD011F56ADC600C910DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6DBCBD021F56AE2F00C910DC /* LocalizationExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationExample.swift; sourceTree = "<group>"; };
+		6DBCBD191F56B98300C910DC /* MockServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
+		6DBCBD1A1F56B98300C910DC /* HARArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HARArchive.swift; sourceTree = "<group>"; };
+		6DBCBD1B1F56B98300C910DC /* MockServer+HAR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MockServer+HAR.swift"; sourceTree = "<group>"; };
+		6DBCBD201F56BABB00C910DC /* ExampleMockServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleMockServerTests.swift; sourceTree = "<group>"; };
+		6DBCBD251F56BBFE00C910DC /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
+		6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = deps/ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
+		6DBCBD471F56C00800C910DC /* LaunchArgument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchArgument.swift; sourceTree = "<group>"; };
 		6DE36CC61F504B27006E73AC /* ArrangeActAssertExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrangeActAssertExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBCBD441F56BD8B00C910DC /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +234,11 @@
 		6D85CD5C1F4AE81800135010 = {
 			isa = PBXGroup;
 			children = (
+				6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */,
 				6D85CD671F4AE81800135010 /* UITestingWorkshop */,
 				6D85CD7C1F4AE81800135010 /* UITestingWorkshopUITests */,
 				6D85CD661F4AE81800135010 /* Products */,
+				6DBCBD241F56BBFE00C910DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +256,7 @@
 			children = (
 				6DBCBD001F56ADC000C910DC /* Localizable.strings */,
 				6D85CD681F4AE81800135010 /* AppDelegate.swift */,
+				6DBCBD471F56C00800C910DC /* LaunchArgument.swift */,
 				6D85CD6F1F4AE81800135010 /* Assets.xcassets */,
 				6D85CE071F4C3E9D00135010 /* CollectionItem.swift */,
 				6D85CE091F4C40CA00135010 /* CollectionViewController.swift */,
@@ -196,9 +287,43 @@
 				6D587BAE1F4F15880002C18A /* AssertionTests.swift */,
 				6D85CD7D1F4AE81800135010 /* UITestingWorkshopUITests.swift */,
 				6DBCBD021F56AE2F00C910DC /* LocalizationExample.swift */,
+				6DBCBD1F1F56B9CA00C910DC /* Mock server */,
 				6D7B81E61F5461AC0055AEC1 /* Supporting Files */,
 			);
 			path = UITestingWorkshopUITests;
+			sourceTree = "<group>";
+		};
+		6DBCBD1F1F56B9CA00C910DC /* Mock server */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCBD191F56B98300C910DC /* MockServer.swift */,
+				6DBCBD1A1F56B98300C910DC /* HARArchive.swift */,
+				6DBCBD1B1F56B98300C910DC /* MockServer+HAR.swift */,
+				6DBCBD201F56BABB00C910DC /* ExampleMockServerTests.swift */,
+			);
+			name = "Mock server";
+			sourceTree = "<group>";
+		};
+		6DBCBD241F56BBFE00C910DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCBD251F56BBFE00C910DC /* ObjectMapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DBCBD2D1F56BD5900C910DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCBD371F56BD5900C910DC /* ObjectMapper.framework */,
+				6DBCBD391F56BD5900C910DC /* ObjectMapper.framework */,
+				6DBCBD3B1F56BD5900C910DC /* ObjectMapper.framework */,
+				6DBCBD3D1F56BD5900C910DC /* ObjectMapper.framework */,
+				6DBCBD3F1F56BD5900C910DC /* ObjectMapper-iOSTests.xctest */,
+				6DBCBD411F56BD5900C910DC /* ObjectMapper-MacTests.xctest */,
+				6DBCBD431F56BD5900C910DC /* ObjectMapper-tvOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +336,7 @@
 				6D85CD611F4AE81800135010 /* Sources */,
 				6D85CD621F4AE81800135010 /* Frameworks */,
 				6D85CD631F4AE81800135010 /* Resources */,
+				6DBCBD2A1F56BC2000C910DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +354,7 @@
 				6D85CD751F4AE81800135010 /* Sources */,
 				6D85CD761F4AE81800135010 /* Frameworks */,
 				6D85CD771F4AE81800135010 /* Resources */,
+				6DBCBD451F56BD9300C910DC /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +401,12 @@
 			mainGroup = 6D85CD5C1F4AE81800135010;
 			productRefGroup = 6D85CD661F4AE81800135010 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6DBCBD2D1F56BD5900C910DC /* Products */;
+					ProjectRef = 6DBCBD2C1F56BD5900C910DC /* ObjectMapper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D85CD641F4AE81800135010 /* UITestingWorkshop */,
@@ -281,6 +414,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6DBCBD371F56BD5900C910DC /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 6DBCBD361F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DBCBD391F56BD5900C910DC /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 6DBCBD381F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DBCBD3B1F56BD5900C910DC /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 6DBCBD3A1F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DBCBD3D1F56BD5900C910DC /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 6DBCBD3C1F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DBCBD3F1F56BD5900C910DC /* ObjectMapper-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-iOSTests.xctest";
+			remoteRef = 6DBCBD3E1F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DBCBD411F56BD5900C910DC /* ObjectMapper-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-MacTests.xctest";
+			remoteRef = 6DBCBD401F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DBCBD431F56BD5900C910DC /* ObjectMapper-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-tvOSTests.xctest";
+			remoteRef = 6DBCBD421F56BD5900C910DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D85CD631F4AE81800135010 /* Resources */ = {
@@ -319,6 +504,7 @@
 				6D85CD6B1F4AE81800135010 /* ViewController.swift in Sources */,
 				6D85CE001F4C390700135010 /* TableItemCell.swift in Sources */,
 				6D85CDFE1F4C37A000135010 /* TableViewController.swift in Sources */,
+				6DBCBD481F56C00800C910DC /* LaunchArgument.swift in Sources */,
 				6D85CD691F4AE81800135010 /* AppDelegate.swift in Sources */,
 				6D85CE041F4C3C3C00135010 /* ItemViewController.swift in Sources */,
 			);
@@ -329,9 +515,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D587BC91F4F1C8E0002C18A /* XCTest+Assert.swift in Sources */,
+				6DBCBD1D1F56B98300C910DC /* HARArchive.swift in Sources */,
 				6D7B81E31F5460130055AEC1 /* XCTestCase+Alert.swift in Sources */,
 				6DE36CC71F504B27006E73AC /* ArrangeActAssertExample.swift in Sources */,
 				6D7B81DB1F545D1A0055AEC1 /* TableScreen.swift in Sources */,
+				6DBCBD211F56BABB00C910DC /* ExampleMockServerTests.swift in Sources */,
 				6D7B81E81F5461F60055AEC1 /* ScrollTillVisibleTests.swift in Sources */,
 				6D587BCB1F4F210A0002C18A /* XCUIElementQuery+Any.swift in Sources */,
 				6D7B81DD1F545D280055AEC1 /* CollectionScreen.swift in Sources */,
@@ -339,7 +527,9 @@
 				6DBCBD031F56AE2F00C910DC /* LocalizationExample.swift in Sources */,
 				6D85CD941F4AE90D00135010 /* Application.swift in Sources */,
 				6D85CD961F4AE95D00135010 /* ApplicationObjectTestCase.swift in Sources */,
+				6DBCBD1E1F56B98300C910DC /* MockServer+HAR.swift in Sources */,
 				6D587BAF1F4F15880002C18A /* AssertionTests.swift in Sources */,
+				6DBCBD1C1F56B98300C910DC /* MockServer.swift in Sources */,
 				6D85CD7E1F4AE81800135010 /* UITestingWorkshopUITests.swift in Sources */,
 				6D7B81DF1F545D360055AEC1 /* ItemScreen.swift in Sources */,
 				6D587BC71F4F1BCF0002C18A /* XCTestCase+Wait.swift in Sources */,
@@ -505,6 +695,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J67E9B6234;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UITestingWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.zalando.UITestingWorkshop;
@@ -518,6 +712,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J67E9B6234;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UITestingWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.zalando.UITestingWorkshop;
@@ -531,6 +729,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = J67E9B6234;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UITestingWorkshopUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.zalando.UITestingWorkshopUITests;
@@ -545,6 +747,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = J67E9B6234;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UITestingWorkshopUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.zalando.UITestingWorkshopUITests;
