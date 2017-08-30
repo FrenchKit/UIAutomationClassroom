@@ -22,6 +22,13 @@ class ViewController: UIViewController {
         showTableButton.accessibilityIdentifier = "showTableButton"
         showCollectionButton.accessibilityIdentifier = "showCollectionButton"
         showCollectionButton.accessibilityValue = "OPEN"
+        localize()
+    }
+
+    func localize() {
+        testingLabel.text = NSLocalizedString("main.testing", comment: "Test in progress")
+        showTableButton.setTitle(NSLocalizedString("main.table.button", comment: "Show table view"), for: .normal)
+        showCollectionButton.setTitle(NSLocalizedString("main.collection.button", comment: "Show collection"), for: .normal)
     }
 
 }

@@ -17,12 +17,131 @@
     </header>
         
     <body>
+      <trans-unit id="Bg6-vy-efv.title">
+        <source>First Tab</source>
+                
+        <note>Class = "UINavigationItem"; title = "First Tab"; ObjectID = "Bg6-vy-efv";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="CFJ-zh-f1q.text">
+        <source>price</source>
+                
+        <note>Class = "UILabel"; text = "price"; ObjectID = "CFJ-zh-f1q";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="Dpr-0T-r8q.badgeValue">
+        <source>3</source>
+                
+        <note>Class = "UITabBarItem"; badgeValue = "3"; ObjectID = "Dpr-0T-r8q";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="Dpr-0T-r8q.title">
+        <source>Second</source>
+                
+        <note>Class = "UITabBarItem"; title = "Second"; ObjectID = "Dpr-0T-r8q";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="I1H-8M-ctW.text">
+        <source>Label</source>
+                
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "I1H-8M-ctW";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="MmU-sU-sKy.text">
+        <source>Name</source>
+                
+        <note>Class = "UILabel"; text = "Name"; ObjectID = "MmU-sU-sKy";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="NPa-vj-aPY.text">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+                
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "NPa-vj-aPY";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="Nbv-JV-kkG.title">
+        <source>Second Tab</source>
+                
+        <note>Class = "UINavigationItem"; title = "Second Tab"; ObjectID = "Nbv-JV-kkG";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="Q9C-N8-ABZ.normalTitle">
+        <source>Show CollectionView</source>
+                
+        <note>Class = "UIButton"; normalTitle = "Show CollectionView"; ObjectID = "Q9C-N8-ABZ";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="R2g-Md-Lib.normalTitle">
+        <source>MORE INFO</source>
+                
+        <note>Class = "UIButton"; normalTitle = "MORE INFO"; ObjectID = "R2g-Md-Lib";</note>
+                
+      </trans-unit>
+            
       <trans-unit id="Uf5-GH-Up0.text">
         <source>UI test in progress</source>
                 
         <target>Test d'UI en cours</target>
                 
         <note>Class = "UILabel"; text = "UI test in progress"; ObjectID = "Uf5-GH-Up0";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="ZK7-7o-Z3n.title">
+        <source>Item</source>
+                
+        <note>Class = "UIViewController"; title = "Item"; ObjectID = "ZK7-7o-Z3n";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="Zcj-OX-lBR.text">
+        <source>John Doe</source>
+                
+        <note>Class = "UILabel"; text = "John Doe"; ObjectID = "Zcj-OX-lBR";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="dc0-uY-ai1.title">
+        <source>Table</source>
+                
+        <note>Class = "UITableViewController"; title = "Table"; ObjectID = "dc0-uY-ai1";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="eu0-Y1-tsf.text">
+        <source>OTHER TAB</source>
+                
+        <note>Class = "UILabel"; text = "OTHER TAB"; ObjectID = "eu0-Y1-tsf";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="f3v-14-taM.title">
+        <source>First</source>
+                
+        <note>Class = "UITabBarItem"; title = "First"; ObjectID = "f3v-14-taM";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="gGz-Ot-0Ma.normalTitle">
+        <source>Show TableView</source>
+                
+        <note>Class = "UIButton"; normalTitle = "Show TableView"; ObjectID = "gGz-Ot-0Ma";</note>
+                
+      </trans-unit>
+            
+      <trans-unit id="mYa-1S-MQu.title">
+        <source>Collection</source>
+                
+        <note>Class = "UICollectionViewController"; title = "Collection"; ObjectID = "mYa-1S-MQu";</note>
                 
       </trans-unit>
             
@@ -38,7 +157,7 @@
         
     <body>
       <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source>
+        <source>Workshop</source>
                 
       </trans-unit>
             
@@ -46,6 +165,41 @@
         <source>1.0</source>
                 
       </trans-unit>
+            
+    </body>
+        
+  </file>
+    
+  <file original="UITestingWorkshop/Localizable.strings" source-language="en" datatype="plaintext" target-language="fr">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.1" build-num="8E1000a"/>
+            
+    </header>
+        
+    <body>
+      <trans-unit id="main.collection.button">
+        <source>main.collection.button</source>
+                
+        <note>Show collection</note>
+                
+      <target>Afficher CollectionView</target>
+            </trans-unit>
+            
+      <trans-unit id="main.table.button">
+        <source>main.table.button</source>
+                
+        <note>Show table view</note>
+                
+      <target>Afficher TableView</target>
+            </trans-unit>
+            
+      <trans-unit id="main.testing">
+        <source>main.testing</source>
+                
+        <note>Test in progress</note>
+                
+      <target>Test d'UI en cours</target>
+            </trans-unit>
             
     </body>
         

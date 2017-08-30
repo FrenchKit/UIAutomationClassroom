@@ -1,0 +1,9 @@
+/* Show collection */
+"main.collection.button" = "Afficher CollectionView";
+
+/* Show table view */
+"main.table.button" = "Afficher TableView";
+
+/* Test in progress */
+"main.testing" = "Test d'UI en cours";
+
