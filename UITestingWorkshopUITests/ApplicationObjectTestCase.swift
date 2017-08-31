@@ -10,6 +10,8 @@ class ApplicationObjectTestCase: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        // TODO: Write a test that expects seeing a 🇫🇷 emojii on the main screen
+        // TODO: modify the app so that it displays a French flag when uiTest flag is passed to it.
         Application.launch(arguments: .uiTest,
                            .languages, .languagesValue(["en", "fr"]),
                            .locale, .localeValue("fr_FR"))

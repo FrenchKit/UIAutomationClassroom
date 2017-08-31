@@ -28,6 +28,7 @@ class ArrangeActAssertExample: XCTestCase {
 
         waitUntil(app.staticTexts["Item"], is: .exists)
 
+        // TODO: Introduce a bug in the app that breaks this test
         XCTAssertExist(app.staticTexts["Item #1"])
 
         app.buttons["Back"].tap()
@@ -36,6 +37,7 @@ class ArrangeActAssertExample: XCTestCase {
         app.buttons["Back"].tap()
         waitUntil(app.staticTexts["First Tab"], is: .exists)
 
+        // TODO: later: extract the following steps into a separate test method
         app.buttons["Second"].tap()
         waitUntil(app.staticTexts["Second Tab"], is: .exists)
 
@@ -58,13 +60,6 @@ class ArrangeActAssertExample: XCTestCase {
 
         waitUntil(app.staticTexts["Item"], is: .exists)
         XCTAssertExist(app.staticTexts["Item #1"])
-    }
-
-    func test_whenSecondTabSelected_screenExists() {
-        app.buttons["Second"].tap()
-
-        waitUntil(app.staticTexts["Second Tab"], is: .exists)
-        XCTAssertExist(app.staticTexts["OTHER TAB"])
     }
 
 }

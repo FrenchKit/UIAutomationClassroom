@@ -17,5 +17,7 @@ class UITestingWorkshopUITests: XCTestCase {
     func testExample() {
         XCTAssertTrue(XCUIApplication().staticTexts["UI test in progress"].exists)
     }
+
+    // TODO: write a test case that asserts that "Show TableView" button exists
     
 }

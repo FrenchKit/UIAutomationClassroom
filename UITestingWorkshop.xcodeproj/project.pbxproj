@@ -203,10 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				6D85CD931F4AE90D00135010 /* Application.swift */,
+				6D85CD971F4AE99100135010 /* MainScreen.swift */,
 				6D7B81DA1F545D1A0055AEC1 /* TableScreen.swift */,
 				6D7B81DC1F545D280055AEC1 /* CollectionScreen.swift */,
 				6D7B81DE1F545D360055AEC1 /* ItemScreen.swift */,
-				6D85CD971F4AE99100135010 /* MainScreen.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -254,24 +254,10 @@
 		6D85CD671F4AE81800135010 /* UITestingWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				6DBCBD001F56ADC000C910DC /* Localizable.strings */,
-				6D85CD681F4AE81800135010 /* AppDelegate.swift */,
-				6DBCBD471F56C00800C910DC /* LaunchArgument.swift */,
-				6D85CD6F1F4AE81800135010 /* Assets.xcassets */,
-				6D85CE071F4C3E9D00135010 /* CollectionItem.swift */,
-				6D85CE091F4C40CA00135010 /* CollectionViewController.swift */,
-				6D85CE0B1F4C414200135010 /* CollectionItemCell.swift */,
-				6D85CD741F4AE81800135010 /* Info.plist */,
-				6D85CD9F1F4AEDCD00135010 /* InfoPlist.strings */,
-				6D85CE051F4C3E4800135010 /* ItemGenerator.swift */,
-				6D85CE031F4C3C3C00135010 /* ItemViewController.swift */,
-				6D85CD711F4AE81800135010 /* LaunchScreen.storyboard */,
-				6D85CD6C1F4AE81800135010 /* Main.storyboard */,
-				6D85CE011F4C392B00135010 /* TableItem.swift */,
-				6D85CDFF1F4C390700135010 /* TableItemCell.swift */,
-				6D7B81E01F545E180055AEC1 /* UIAccessibleContainer.swift */,
-				6D85CDFD1F4C37A000135010 /* TableViewController.swift */,
-				6D85CD6A1F4AE81800135010 /* ViewController.swift */,
+				6DC0817E1F580D27005D6EA1 /* CollectionView */,
+				6DC081801F580D52005D6EA1 /* Main */,
+				6DC081761F580D1F005D6EA1 /* TableView */,
+				6DC0817F1F580D43005D6EA1 /* Supporting Files */,
 			);
 			path = UITestingWorkshop;
 			sourceTree = "<group>";
@@ -281,11 +267,11 @@
 			children = (
 				6D7B81E41F54618E0055AEC1 /* Screens */,
 				6D7B81E51F5461A60055AEC1 /* Utilities */,
+				6D85CD7D1F4AE81800135010 /* UITestingWorkshopUITests.swift */,
 				6D85CD951F4AE95D00135010 /* ApplicationObjectTestCase.swift */,
 				6DE36CC61F504B27006E73AC /* ArrangeActAssertExample.swift */,
-				6D7B81E71F5461F60055AEC1 /* ScrollTillVisibleTests.swift */,
 				6D587BAE1F4F15880002C18A /* AssertionTests.swift */,
-				6D85CD7D1F4AE81800135010 /* UITestingWorkshopUITests.swift */,
+				6D7B81E71F5461F60055AEC1 /* ScrollTillVisibleTests.swift */,
 				6DBCBD021F56AE2F00C910DC /* LocalizationExample.swift */,
 				6DBCBD1F1F56B9CA00C910DC /* Mock server */,
 				6D7B81E61F5461AC0055AEC1 /* Supporting Files */,
@@ -324,6 +310,52 @@
 				6DBCBD431F56BD5900C910DC /* ObjectMapper-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6DC081761F580D1F005D6EA1 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6D85CE011F4C392B00135010 /* TableItem.swift */,
+				6D85CDFF1F4C390700135010 /* TableItemCell.swift */,
+				6D85CDFD1F4C37A000135010 /* TableViewController.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		6DC0817E1F580D27005D6EA1 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6D85CE071F4C3E9D00135010 /* CollectionItem.swift */,
+				6D85CE091F4C40CA00135010 /* CollectionViewController.swift */,
+				6D85CE0B1F4C414200135010 /* CollectionItemCell.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		6DC0817F1F580D43005D6EA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCBD001F56ADC000C910DC /* Localizable.strings */,
+				6D85CD6F1F4AE81800135010 /* Assets.xcassets */,
+				6D85CD741F4AE81800135010 /* Info.plist */,
+				6D85CD9F1F4AEDCD00135010 /* InfoPlist.strings */,
+				6D85CD711F4AE81800135010 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DC081801F580D52005D6EA1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6D85CD681F4AE81800135010 /* AppDelegate.swift */,
+				6DBCBD471F56C00800C910DC /* LaunchArgument.swift */,
+				6D85CE051F4C3E4800135010 /* ItemGenerator.swift */,
+				6D85CE031F4C3C3C00135010 /* ItemViewController.swift */,
+				6D85CD6C1F4AE81800135010 /* Main.storyboard */,
+				6D7B81E01F545E180055AEC1 /* UIAccessibleContainer.swift */,
+				6D85CD6A1F4AE81800135010 /* ViewController.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

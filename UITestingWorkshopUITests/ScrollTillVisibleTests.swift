@@ -13,11 +13,12 @@ class ScrollTillVisibleTests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         Application.launch()
-        mainScreen.showTableButton.tap()
-        waitUntil(tableScreen.table, is: .exists)
     }
 
     func test_scroll20Elements() {
+        mainScreen.showTableButton.tap()
+        waitUntil(tableScreen.table, is: .exists)
+
         func cell(at index: Int) -> TableScreen.Cell? {
             return tableScreen.cells.first(where: { $0.element.identifier == "cell\(index)" })
         }
@@ -32,5 +33,7 @@ class ScrollTillVisibleTests: XCTestCase {
         }
         XCTAssertEqual(tableCell?.title, "Item #21")
     }
+
+    // TODO: write a test that opens collection view screen and scrolls till 31st item
 
 }
