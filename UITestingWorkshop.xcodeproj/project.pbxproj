@@ -254,9 +254,10 @@
 		6D85CD671F4AE81800135010 /* UITestingWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				6DC0817E1F580D27005D6EA1 /* CollectionView */,
 				6DC081801F580D52005D6EA1 /* Main */,
+				6DC081811F581125005D6EA1 /* Common */,
 				6DC081761F580D1F005D6EA1 /* TableView */,
+				6DC0817E1F580D27005D6EA1 /* CollectionView */,
 				6DC0817F1F580D43005D6EA1 /* Supporting Files */,
 			);
 			path = UITestingWorkshop;
@@ -347,15 +348,22 @@
 		6DC081801F580D52005D6EA1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				6D85CD681F4AE81800135010 /* AppDelegate.swift */,
-				6DBCBD471F56C00800C910DC /* LaunchArgument.swift */,
-				6D85CE051F4C3E4800135010 /* ItemGenerator.swift */,
-				6D85CE031F4C3C3C00135010 /* ItemViewController.swift */,
 				6D85CD6C1F4AE81800135010 /* Main.storyboard */,
-				6D7B81E01F545E180055AEC1 /* UIAccessibleContainer.swift */,
+				6D85CD681F4AE81800135010 /* AppDelegate.swift */,
 				6D85CD6A1F4AE81800135010 /* ViewController.swift */,
+				6DBCBD471F56C00800C910DC /* LaunchArgument.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		6DC081811F581125005D6EA1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6D85CE051F4C3E4800135010 /* ItemGenerator.swift */,
+				6D85CE031F4C3C3C00135010 /* ItemViewController.swift */,
+				6D7B81E01F545E180055AEC1 /* UIAccessibleContainer.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

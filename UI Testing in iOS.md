@@ -73,7 +73,6 @@ encapsulates a query to find elements on the screen
 * accessibilityLabel
 * accessibilityElements
 
-
 ## Writing your test
 * Using XCTAssert* assertions
 * Arrange, Act, Assert
@@ -82,7 +81,10 @@ encapsulates a query to find elements on the screen
 * Using screen objects
 * Organizing your test code and reusing some pieces.
 * Utility methods for tests.
-* Edge cases: tapping on coordinate and delaying text input.
+
+## App launch arguments
+* You can pass arguments to your app on XCUIApplication.launch() and parse them from ProcessArguments object accessible in your app.
+* This is a way to turn on / turn off some functionality for UI testing, like mock servers or A/B testing.
 
 ## Table views and Collection views
 * Cells are opaque to UI test system by default, you have to implement accessiblity container protocol for cells.
@@ -91,10 +93,6 @@ encapsulates a query to find elements on the screen
 * You have to scroll until some element is visible or hittable.
 * When working with XCUIElement cells, convert them to Cell objects for better code.
 * allElementsBoundByIndex
-
-## App launch arguments
-* You can pass arguments to your app on XCUIApplication.launch() and parse them from ProcessArguments object accessible in your app.
-* This is a way to turn on / turn off some functionality for UI testing, like mock servers or A/B testing.
 
 ## Screen sizes
 * Different screen size may have different behavior, hence your UI test for one screen size may fail for another. 

@@ -62,4 +62,6 @@ class ArrangeActAssertExample: XCTestCase {
         XCTAssertExist(app.staticTexts["Item #1"])
     }
 
+    // TODO: refactor the code using screen objects.
+
 }
