@@ -10,7 +10,7 @@ class UITestingWorkshopUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         let app = XCUIApplication()
-        app.launchArguments = ["ui_testing"] // default language
+        app.launchArguments = ["ui_testing"]
         app.launch()
     }
 
@@ -19,5 +19,5 @@ class UITestingWorkshopUITests: XCTestCase {
     }
 
     // TODO: write a test case that asserts that "Show TableView" button exists
-    
+
 }

@@ -11,6 +11,7 @@ class ArrangeActAssertExample: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        continueAfterFailure = false
         Application.launch()
     }
 

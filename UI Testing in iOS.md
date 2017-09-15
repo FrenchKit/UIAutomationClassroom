@@ -54,7 +54,7 @@ encapsulates a query to find elements on the screen
     //    Raises exception if multiple elements found with the same value.
         
     let button = app.buttons["myButton"]
-    let label = app.labels["Help"]
+    let label = app.staticTexts["Help"]
 
 ### Common UI elements
     
