@@ -1,4 +1,4 @@
-#UI automation with XCTest.
+# UI automation with XCTest.
 ---
 ## Abstract
 In this classroom I’ll cover XCUITest automation in-depth. I’ll share my learnings and set of
