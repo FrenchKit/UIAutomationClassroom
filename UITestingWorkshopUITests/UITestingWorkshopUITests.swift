@@ -19,5 +19,8 @@ class UITestingWorkshopUITests: XCTestCase {
     }
 
     // TODO: STEP 1: write a test case that asserts that "Show TableView" button exists
+    func testShowTableViewExists() {
+        XCTAssertTrue(XCUIApplication().buttons["Show TableView"].exists)
+    }
 
 }
