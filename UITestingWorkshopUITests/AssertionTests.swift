@@ -41,12 +41,16 @@ class BasicAssertions: XCTestCase {
     }
 
     func test_customAssertions() {
-        XCTAssertNotExist(main.testingLabel)
+        XCTAssertExist(main.testingLabel)
         XCTAssertExist(main.showTableButton)
         XCTAssertHittable(main.showCollectionButton)
         XCTAssertNotHittable(main.testingLabel)
     }
 
     // TODO: STEP 4: write a test method that asserts that second tab button is hittable after app enters collection view.
+    func testTabBarButtonHittable() {
+        main.showCollectionButton.tap()
+        XCTAssertHittable(Application.app.secondTab)
+    }
 
 }
