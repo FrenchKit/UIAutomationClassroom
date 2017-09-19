@@ -21,6 +21,7 @@ class BasicAssertions: XCTestCase {
         XCTAssertEqual(main.showTableButton.label, "Show TableView")
         XCTAssertNotEqual(main.showCollectionButton.value as? String, "")
         // TODO: STEP 2: assert that testing label's text is "UI test in progress"
+        XCTAssertEqual(main.testingLabel.label, "UI test in progress")
     }
 
     func test_waitAssertions() {
