@@ -8,6 +8,9 @@ class ArrangeActAssertExample: XCTestCase {
 
     let app = Application.xcApp
     let mainScreen = MainScreen()
+    let tableScreen = TableScreen()
+    let itemScreen = ItemScreen()
+    let otherTabScreen = OtherTabScreen()
 
     override func setUp() {
         super.setUp()
@@ -20,50 +23,28 @@ class ArrangeActAssertExample: XCTestCase {
         // here you can reset your changes, for example, logout the current user.
     }
 
-    func test_allInOne() {
-        mainScreen.showTableButton.tap()
-
-        let cell = app.tables["table"].cells.allElementsBoundByIndex.first
-
-        cell?.tap()
-
-        waitUntil(app.staticTexts["Item"], is: .exists)
-
-        // TODO: STEP 5: Introduce a bug in the app that breaks this test
-        XCTAssertExist(app.staticTexts["Item #1"])
-
-        app.buttons["Back"].tap()
-        waitUntil(app.staticTexts["Table"], is: .exists)
-
-        app.buttons["Back"].tap()
-        waitUntil(app.staticTexts["First Tab"], is: .exists)
-
-    }
-
     func test_whenTableOpened_itHasItems() {
         mainScreen.showTableButton.tap()
 
-        let cells = app.tables["table"].cells.allElementsBoundByIndex
-
-        XCTAssertFalse(cells.isEmpty)
+        XCTAssertFalse(tableScreen.cells.isEmpty)
     }
 
     func test_whenTableItemOpened_detailsHasInformation() {
         mainScreen.showTableButton.tap()
-        let cells = app.tables["table"].cells.allElementsBoundByIndex
+        let cells = tableScreen.cells
 
-        cells.first?.tap()
+        cells.first?.element.tap()
 
-        waitUntil(app.staticTexts["Item"], is: .exists)
-        XCTAssertExist(app.staticTexts["Item #1"])
+        waitUntil(itemScreen.title, is: .exists)
+        XCTAssertExist(itemScreen.header(itemNumber: 1))
     }
 
     // TODO: STEP 6: extract the following steps into a separate test method
     func test_secondTabScreen() {
-        app.buttons["Second"].tap()
-        waitUntil(app.staticTexts["Second Tab"], is: .exists)
+        Application.app.secondTab.tap()
+        waitUntil(Application.app.secondTabText, is: .exists)
 
-        XCTAssertExist(app.staticTexts["OTHER TAB"])
+        XCTAssertExist(otherTabScreen.text)
     }
 
     // TODO: STEP 7: refactor the code using screen objects.

@@ -10,6 +10,7 @@ struct Application {
     static let xcApp = XCUIApplication()
     let firstTab = xcApp.buttons["First"]
     let secondTab = xcApp.buttons["Second"]
+    let secondTabText = xcApp.staticTexts["Second Tab"]
 
     enum Arguments: CustomStringConvertible {
         case uiTest
