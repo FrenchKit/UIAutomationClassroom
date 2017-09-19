@@ -88,7 +88,7 @@
         <!--Second Tab-->
         <scene sceneID="X6T-Jr-Re0">
             <objects>
-                <viewController id="NrF-x7-sGK" sceneMemberID="viewController">
+                <viewController id="NrF-x7-sGK" customClass="OtherViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1I4-sP-FFn"/>
                         <viewControllerLayoutGuide type="bottom" id="qMx-FE-jqj"/>

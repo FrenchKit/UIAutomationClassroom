@@ -26,6 +26,10 @@ class LocalizationExample: XCTestCase {
     }
 
     // TODO: STEP 10: write a test method that asserts second tab's text is in French
+    func test_tabText() {
+        Application.app.secondTab.tap()
+        XCTAssertEqual(Application.xcApp.navigationBars.staticTexts.element.label, XCLocalizedString("tab.second"))
+    }
 }
 
 extension LocalizationExample {
