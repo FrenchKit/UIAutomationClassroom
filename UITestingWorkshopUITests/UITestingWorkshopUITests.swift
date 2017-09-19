@@ -18,6 +18,6 @@ class UITestingWorkshopUITests: XCTestCase {
         XCTAssertTrue(XCUIApplication().staticTexts["UI test in progress"].exists)
     }
 
-    // TODO: write a test case that asserts that "Show TableView" button exists
+    // TODO: STEP 1: write a test case that asserts that "Show TableView" button exists
 
 }

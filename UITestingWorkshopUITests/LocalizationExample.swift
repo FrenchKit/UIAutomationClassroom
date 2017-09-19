@@ -25,7 +25,7 @@ class LocalizationExample: XCTestCase {
         XCTAssertEqual(mainScreen.testingLabel.label, XCLocalizedString("main.testing"))
     }
 
-    // TODO: write a test method that asserts second tab's text is in French
+    // TODO: STEP 10: write a test method that asserts second tab's text is in French
 }
 
 extension LocalizationExample {

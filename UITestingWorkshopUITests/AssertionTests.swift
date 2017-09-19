@@ -20,7 +20,7 @@ class BasicAssertions: XCTestCase {
         XCTAssertTrue(main.testingLabel.exists)
         XCTAssertEqual(main.showTableButton.label, "Show TableView")
         XCTAssertNotEqual(main.showCollectionButton.value as? String, "")
-        // TODO: assert that testing label's text is "UI test in progress"
+        // TODO: STEP 2: assert that testing label's text is "UI test in progress"
     }
 
     func test_waitAssertions() {
@@ -33,7 +33,7 @@ class BasicAssertions: XCTestCase {
         // waitUntilTrue(main.testingLabel.label == "Not testing", 2)
     }
 
-    // TODO: write a test method that opens collection view screen
+    // TODO: STEP 3: write a test method that opens collection view screen
 
     func test_customAssertions() {
         XCTAssertNotExist(main.testingLabel)
@@ -42,6 +42,6 @@ class BasicAssertions: XCTestCase {
         XCTAssertNotHittable(main.testingLabel)
     }
 
-    // TODO: write a test method that asserts that second tab button is hittable after app enters collection view.
+    // TODO: STEP 4: write a test method that asserts that second tab button is hittable after app enters collection view.
 
 }

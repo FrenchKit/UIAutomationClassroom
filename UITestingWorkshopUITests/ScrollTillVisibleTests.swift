@@ -34,6 +34,6 @@ class ScrollTillVisibleTests: XCTestCase {
         XCTAssertEqual(tableCell?.title, "Item #21")
     }
 
-    // TODO: write a test that opens collection view screen and scrolls till 31st item
+    // TODO: STEP 9: write a test that opens collection view screen and scrolls till 31st item
 
 }
