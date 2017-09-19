@@ -15,7 +15,7 @@ class ItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = UIImage(named: item.imageName)
-        titleLabel.text = item.title
+        titleLabel.text = item.title + "bug"
 
         imageView.accessibilityIdentifier = "image"
         titleLabel.accessibilityIdentifier = "title"
