@@ -35,6 +35,10 @@ class BasicAssertions: XCTestCase {
     }
 
     // TODO: STEP 3: write a test method that opens collection view screen
+    func test_openingCollectionView() {
+        main.showCollectionButton.tap()
+        XCTAssertEqual(XCUIApplication().navigationBars.staticTexts.element(boundBy: 0).label, "Collection")
+    }
 
     func test_customAssertions() {
         XCTAssertNotExist(main.testingLabel)
