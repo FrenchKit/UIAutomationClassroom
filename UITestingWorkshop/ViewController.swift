@@ -13,11 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var testingLabel: UILabel!
     @IBOutlet weak var showTableButton: UIButton!
     @IBOutlet weak var showCollectionButton: UIButton!
+    @IBOutlet weak var emojiLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let args = ProcessInfo.processInfo.arguments
         testingLabel.isHidden = !args.contains("ui_testing")
+        emojiLabel.isHidden = !args.contains("ui_testing")
         testingLabel.accessibilityIdentifier = "testingLabel"
         showTableButton.accessibilityIdentifier = "showTableButton"
         showCollectionButton.accessibilityIdentifier = "showCollectionButton"

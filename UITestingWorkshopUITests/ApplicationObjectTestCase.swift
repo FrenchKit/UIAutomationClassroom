@@ -19,6 +19,7 @@ class ApplicationObjectTestCase: XCTestCase {
 
     func test_empty() {
         XCTAssertTrue(mainScreen.testingLabel.exists)
+        XCTAssertExist(XCUIApplication().staticTexts["🇫🇷"])
     }
 
 }
