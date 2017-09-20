@@ -10,7 +10,7 @@ class ArrangeActAssertExample: XCTestCase {
     let mainScreen = MainScreen()
     let tableScreen = TableScreen()
     let itemScreen = ItemScreen()
-    let otherTabScreen = OtherTabScreen()
+//    let otherTabScreen = OtherTabScreen()
 
     override func setUp() {
         super.setUp()
@@ -44,7 +44,7 @@ class ArrangeActAssertExample: XCTestCase {
         Application.app.secondTab.tap()
         waitUntil(Application.app.secondTabText, is: .exists)
 
-        XCTAssertExist(otherTabScreen.text)
+//        XCTAssertExist(otherTabScreen.text)
     }
 
     // TODO: STEP 7: refactor the code using screen objects.
