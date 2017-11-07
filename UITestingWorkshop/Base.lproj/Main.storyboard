@@ -51,15 +51,23 @@
                                     <constraint firstAttribute="height" constant="130" id="kTL-NJ-YyS"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇫🇷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-Ul-vNE">
+                                <rect key="frame" x="133" y="431" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gGz-Ot-0Ma" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2BI-dD-XhU"/>
+                            <constraint firstItem="fGB-Ul-vNE" firstAttribute="top" secondItem="Jiu-qM-b42" secondAttribute="bottom" constant="32" id="Mb5-Qs-GUz"/>
                             <constraint firstItem="Uf5-GH-Up0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QfU-G6-rdh"/>
                             <constraint firstItem="Uf5-GH-Up0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S5o-xS-uUb"/>
                             <constraint firstItem="Q9C-N8-ABZ" firstAttribute="top" secondItem="gGz-Ot-0Ma" secondAttribute="bottom" constant="28.5" id="Ugr-gE-aAR"/>
                             <constraint firstItem="Q9C-N8-ABZ" firstAttribute="centerX" secondItem="gGz-Ot-0Ma" secondAttribute="centerX" id="Vwk-sW-u8y"/>
                             <constraint firstItem="Jiu-qM-b42" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctj-O2-A7i"/>
+                            <constraint firstItem="fGB-Ul-vNE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdB-Fq-peJ"/>
                             <constraint firstItem="Uf5-GH-Up0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hwh-dI-Y9v"/>
                             <constraint firstItem="gGz-Ot-0Ma" firstAttribute="top" secondItem="Uf5-GH-Up0" secondAttribute="bottom" constant="50" id="jqs-qK-Mkm"/>
                             <constraint firstItem="Jiu-qM-b42" firstAttribute="top" secondItem="Q9C-N8-ABZ" secondAttribute="bottom" constant="25" id="pFP-lY-FIV"/>
@@ -67,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="First Tab" id="Bg6-vy-efv"/>
                     <connections>
+                        <outlet property="emojiLabel" destination="fGB-Ul-vNE" id="BBf-P3-QcO"/>
                         <outlet property="showCollectionButton" destination="Q9C-N8-ABZ" id="D93-er-QPX"/>
                         <outlet property="showTableButton" destination="gGz-Ot-0Ma" id="fip-vR-R4I"/>
                         <outlet property="testingLabel" destination="Uf5-GH-Up0" id="yZs-hL-dc1"/>
@@ -79,7 +88,7 @@
         <!--Second Tab-->
         <scene sceneID="X6T-Jr-Re0">
             <objects>
-                <viewController id="NrF-x7-sGK" sceneMemberID="viewController">
+                <viewController id="NrF-x7-sGK" customClass="OtherViewController" customModule="UITestingWorkshop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1I4-sP-FFn"/>
                         <viewControllerLayoutGuide type="bottom" id="qMx-FE-jqj"/>

@@ -7,6 +7,6 @@ and tips and tricks that will help others to write better tests, faster. This cl
 my experience of automating a regression test suite for our app during last three and a half months.
 
 ## Prerequisites
-* Xcode 8.3.1 ⚒
+* Xcode 8.3.1 or later ⚒
 * Swift 🏎
 * Interest in test automation 🤖

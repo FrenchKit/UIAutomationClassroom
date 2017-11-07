@@ -4,7 +4,7 @@
 
 import XCTest
 
-class LocalizationExample: XCTestCase {
+class Exercise10Solution: XCTestCase {
 
     let mainScreen = MainScreen()
     let languageCode = "fr"
@@ -26,9 +26,13 @@ class LocalizationExample: XCTestCase {
     }
 
     // TODO: STEP 10: write a test method that asserts second tab's text is in French
+    func test_tabText() {
+        Application.app.secondTab.tap()
+        XCTAssertEqual(Application.xcApp.navigationBars.staticTexts.element.label, XCLocalizedString("tab.second"))
+    }
 }
 
-extension LocalizationExample {
+extension Exercise10Solution {
 
     func XCLocalizedString(_ key: String) -> String {
         return NSLocalizedString(key, bundle: bundle, comment: "")

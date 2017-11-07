@@ -4,13 +4,13 @@
 
 import XCTest
 
-class ApplicationObjectTestCase: XCTestCase {
+class Exercise8Solution: XCTestCase {
 
     let mainScreen = MainScreen()
 
     override func setUp() {
         super.setUp()
-        // TODO: STEP 8: Write a test that expects seeing a 🇫🇷 emojii on the main screen
+        // TODO: STEP 8: Write a test that expects seeing a 🇫🇷 emoji on the main screen
         // TODO: modify the app so that it displays a French flag when uiTest flag is passed to it.
         Application.launch(arguments: .uiTest,
                            .languages, .languagesValue(["en", "fr"]),
@@ -19,6 +19,7 @@ class ApplicationObjectTestCase: XCTestCase {
 
     func test_empty() {
         XCTAssertTrue(mainScreen.testingLabel.exists)
+        XCTAssertExist(XCUIApplication().staticTexts["🇫🇷"])
     }
 
 }

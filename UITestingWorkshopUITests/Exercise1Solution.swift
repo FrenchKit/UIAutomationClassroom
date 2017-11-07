@@ -4,7 +4,7 @@
 
 import XCTest
 
-class UITestingWorkshopUITests: XCTestCase {
+class Exercise1Solution: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -19,5 +19,8 @@ class UITestingWorkshopUITests: XCTestCase {
     }
 
     // TODO: STEP 1: write a test case that asserts that "Show TableView" button exists
+    func testShowTableViewExists() {
+        XCTAssertTrue(XCUIApplication().buttons["Show TableView"].exists)
+    }
 
 }

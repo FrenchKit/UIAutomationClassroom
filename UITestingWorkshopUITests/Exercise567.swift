@@ -4,10 +4,13 @@
 
 import XCTest
 
-class ArrangeActAssertExample: XCTestCase {
+class Exercise567: XCTestCase {
 
     let app = Application.xcApp
     let mainScreen = MainScreen()
+    let tableScreen = TableScreen()
+    let itemScreen = ItemScreen()
+//    let otherTabScreen = OtherTabScreen()
 
     override func setUp() {
         super.setUp()
@@ -43,24 +46,6 @@ class ArrangeActAssertExample: XCTestCase {
         waitUntil(app.staticTexts["Second Tab"], is: .exists)
 
         XCTAssertExist(app.staticTexts["OTHER TAB"])
-    }
-
-    func test_whenTableOpened_itHasItems() {
-        mainScreen.showTableButton.tap()
-
-        let cells = app.tables["table"].cells.allElementsBoundByIndex
-
-        XCTAssertFalse(cells.isEmpty)
-    }
-
-    func test_whenTableItemOpened_detailsHasInformation() {
-        mainScreen.showTableButton.tap()
-        let cells = app.tables["table"].cells.allElementsBoundByIndex
-
-        cells.first?.tap()
-
-        waitUntil(app.staticTexts["Item"], is: .exists)
-        XCTAssertExist(app.staticTexts["Item #1"])
     }
 
     // TODO: STEP 7: refactor the code using screen objects.

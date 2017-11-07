@@ -8,6 +8,11 @@ class CollectionViewController: UICollectionViewController {
 
     var items: [CollectionItem] = ItemGenerator.generate()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView?.accessibilityIdentifier = "collection"
+    }
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
@@ -16,6 +21,7 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionItemCell",
                                                       for: indexPath) as! CollectionItemCell
         cell.configure(items[indexPath.item])
+        cell.accessibilityIdentifier = "cell\(indexPath.item)"
         return cell
     }
 
