@@ -4,7 +4,7 @@
 
 import XCTest
 
-class LocalizationExample: XCTestCase {
+class Exercise10Solution: XCTestCase {
 
     let mainScreen = MainScreen()
     let languageCode = "fr"
@@ -32,7 +32,7 @@ class LocalizationExample: XCTestCase {
     }
 }
 
-extension LocalizationExample {
+extension Exercise10Solution {
 
     func XCLocalizedString(_ key: String) -> String {
         return NSLocalizedString(key, bundle: bundle, comment: "")

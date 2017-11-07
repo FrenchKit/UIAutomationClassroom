@@ -4,7 +4,7 @@
 
 import XCTest
 
-class ApplicationObjectTestCase: XCTestCase {
+class Exercise8Solution: XCTestCase {
 
     let mainScreen = MainScreen()
 

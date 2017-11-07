@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let args = ProcessInfo.processInfo.arguments
         testingLabel.isHidden = !args.contains("ui_testing")
-        emojiLabel.isHidden = !args.contains("ui_testing")
+        emojiLabel.isHidden = true // !args.contains("ui_testing")
         testingLabel.accessibilityIdentifier = "testingLabel"
         showTableButton.accessibilityIdentifier = "showTableButton"
         showCollectionButton.accessibilityIdentifier = "showCollectionButton"

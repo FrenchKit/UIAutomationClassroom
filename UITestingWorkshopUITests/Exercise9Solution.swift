@@ -4,7 +4,7 @@
 
 import XCTest
 
-class ScrollTillVisibleTests: XCTestCase {
+class Exercise9Solution: XCTestCase {
 
     let mainScreen = MainScreen()
     let tableScreen = TableScreen()

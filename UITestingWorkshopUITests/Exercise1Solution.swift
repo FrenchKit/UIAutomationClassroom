@@ -4,7 +4,7 @@
 
 import XCTest
 
-class UITestingWorkshopUITests: XCTestCase {
+class Exercise1Solution: XCTestCase {
         
     override func setUp() {
         super.setUp()
